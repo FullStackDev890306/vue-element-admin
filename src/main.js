@@ -49,5 +49,6 @@ new Vue({
   el: '#app',
   router,
   store,
+  mounted: () => document.dispatchEvent(new Event('x-app-rendered')),
   render: h => h(App)
 })
